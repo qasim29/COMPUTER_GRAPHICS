@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB_1_TASK_2</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        canvas {
+
+            width: 50%;
+            max-width: 50%;
+            height: 50%;
+            max-height: 50%;
+
+            float: right;
+
+        }
+
+        #myChart1 {
+            background-color: rgb(98, 0, 255);
+  
+        }
+
+        #myChart2 {
+            background-color: rgb(255, 0, 0);
+        }
+
+        #myChart3 {
+            background-color: rgb(4, 255, 0);
+
+        }
+
+        #myChart4 {
+            background-color: rgb(255, 153, 0);
+        }
+    </style>
+
+</head>
+
+<script src="./package/dist/chart.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+
+<canvas id="myChart1"></canvas>
+<canvas id="myChart2"></canvas>
+<canvas id="myChart3"></canvas>
+<canvas id="myChart4"></canvas>
+
+<script>
+    var xValues = [];
+    var yValues = [];
+    var arr = ["myChart1", "myChart2", "myChart3", "myChart4"];
+
+    generateData("Math.sin(x)", 0, 10, 0.5);
+
+    for (let i = 0; i < 4; i += 1) {
+
+        new Chart(arr[i], {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    fill: false,
+                    pointRadius: 1,
+                    borderColor: "rgba(0,0,0,0.5)",
+                    data: yValues
+                }]
+            },
+
+        });
+    }
+    function generateData(value, i1, i2, step = 1) {
+        for (let x = i1; x <= i2; x += step) {
+            yValues.push(eval(value));
+            xValues.push(x);
+        }
+    }
+</script>
+
+</body>
+
+</html>
