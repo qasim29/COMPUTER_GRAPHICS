@@ -1,39 +1,69 @@
 # Computer_Graphics
 
 
-# LAB_1 : 
-## OBJECTIVES
-Task1: Slit screen into 4 equal blocks.
+# LAB_1  
+### OBJECTIVES
 
-Task2: Slit screen into 4 equal blocks and plot a graph on each block
+**TASK 1:** Split screen into 4 equal blocks.
 
-Task3: Pot a graph
+**TASK 2:** Split screen into 4 equal blocks and plot a graph on each block
 
-### PACKAGES USED
-chart.js
-Three.js
+**TASK 3:** Plot a graph
+
+#### PACKAGES USED
+
+**TASK 1:**
+- NONE
+
+**TASK 2:**
+- three.js
+- chart.js
+
+**TASK 3:**
+- three.js
+- chart.js
+
 
 links:
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+`<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>`
+
+# LAB_2
+### OBJECTIVES
+
+**TASK 1:** Draw a Cube using three.js
+
+**TASK 2:** code for cropping an image, code for filtering an image 
+
+#### PACKAGES USED
+
+**TASK 1:** 
+- Three.js
+
+**TASK 2:**
+- numpy
+- PIL
 
 
-# LAB_2,
-## OBJECTIVES
-Task1: Draw a Cube using three.js
+# LAB_3   
 
-Task2: code for cropping an image, code for filtering an image 
+### OBJECTIVES
 
-### PACKAGES USED
+**TASK 1:** Code "Rain effect" using three.js   
 
-Task1: Three.js
+#### PACKAGES USED
 
-Task2: numpy, PIL
+**TASK 1:** 
 
+- Three.js
 
-# LAB_3 : three.min.js 
+# LAB_4   
 
-Task1: Code "Rain effect" using three.js   
+### OBJECTIVES
 
-### PACKAGES USED
+**TASK 1:** Code Draw a circle using three.js   
 
-Task1: Three.js
+#### PACKAGES USED
+
+**TASK 1:** 
+- Three.js
+
