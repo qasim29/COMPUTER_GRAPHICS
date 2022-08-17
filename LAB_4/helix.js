@@ -10,14 +10,12 @@ document.body.appendChild(renderer.domElement);
 // START Helix
 const geometry = new THREE.BufferGeometry();
 
-let point=[];
+let poihelix
 
 const angle=2*Math.PI/40;
 
-let inc=0;
 for(let i=0; i<=160; i++){
-    point.push(new THREE.Vector3(Math.cos(angle*i),Math.sin(angle*i),0.1*angle*i));
-    inc+=0.01;
+    point.push(new THREE.Vector3(Math.cos(angle*i),Math.sin(angle*i),0.1*angle*i));    
 }
 geometry.setFromPoints(point);
 
@@ -25,15 +23,15 @@ const material = new THREE.LineBasicMaterial({
     color: "rgb(149, 199, 232)", 
 });
 
-let circle = new THREE.Line(geometry, material);
+let helix = new THREE.Line(geometry, material);
 
-scene.add(circle);
+scene.add(helix);
 
 //end circle 
 
 
 function animate() {    
-    circle.rotation.x += 0.01;
+    helix.rotation.x += 0.01;
     renderer.render(scene,camera);
     requestAnimationFrame(animate);
 }
