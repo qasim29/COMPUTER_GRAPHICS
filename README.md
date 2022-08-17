@@ -22,6 +22,9 @@
 **TASK 3:**
 - three.js
 - chart.js
+- first
+- second
+- third
 
 
 links:
