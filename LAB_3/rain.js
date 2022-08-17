@@ -71,7 +71,7 @@ function animate() {
     points1.push(new THREE.Vector3(0, 2, 0));
     points1.push(new THREE.Vector3(-0.5, 1, 0));
 
-    let geometry1 = new THREE.BufferGeometry()
+    let geometry1 = new THREE.BufferGeometry();
     
     geometry1.setFromPoints(points1);
     
