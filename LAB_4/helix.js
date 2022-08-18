@@ -10,7 +10,7 @@ document.body.appendChild(renderer.domElement);
 // START Helix
 const geometry = new THREE.BufferGeometry();
 
-let poihelix
+let point=[];
 
 const angle=2*Math.PI/40;
 
@@ -46,3 +46,11 @@ window.addEventListener('resize', () => {
    
 
 });
+
+window.addEventListener('resize', () => {
+    renderer.setSize(window.innerWidth,window.innerHeight);
+    camera.aspect=window.innerWidth/window.innerHeight;
+   
+
+})
+
