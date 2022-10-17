@@ -65,7 +65,12 @@ OR
 
 - Three.js
 
-
+# 
+# threeJsLocal
+ Local File Setup for Three JS
+# Local File Protocol
+Simply double click on index.html, or open it on any of the browsers.
+# 
 # threeJsLive
  Live Server Three JS 
 # Live Server Setup
